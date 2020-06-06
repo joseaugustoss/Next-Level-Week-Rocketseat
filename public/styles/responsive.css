@@ -21,6 +21,18 @@
     #page-search-results .cards img{
         height: 280px;
     } 
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    #page-create-point .field-group .field + .field{
+        margin-left: 0px;
+    }
+
+    #page-create-point .items-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
 }
 
 @media (min-width: 1440px){
@@ -32,5 +44,13 @@
 @media (max-height: 760px){
     #page-home {
         background-position-y: 200px;
+    }
+}
+
+@media (max-width: 500px){
+    #page-create-point .items-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 }
