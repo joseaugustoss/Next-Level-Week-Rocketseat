@@ -70,10 +70,21 @@
     border-radius: 0 8px 8px 0;
 }
 
-#modal form button{
+#modal form button:hover{
     background-color: #2fb85e;
 }
 
 #modal.hide{
     display: none;
+}
+
+/* isso é para o modal point created */
+#modal.point .content{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+#modal.point  h1{
+    color: #ffffff;
+    margin-top: 32px;
 }
